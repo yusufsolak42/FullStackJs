@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tex to Text:</h1>
+      <form id="textForm">
+        <label for="textPrompt">Please enter your prompt: </label>
+        <input type="text" id="textPrompt" placeholder="Enter here" />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <div id="textResponse"></div>
+
+    <hr />
+
+    <div class="container">
+      <h1>Text to Image:</h1>
+      <form id="imageForm">
+        <label for="imagePrompt">Please enter your prompt: </label>
+        <input type="text" id="imagePrompt" placeholder="Enter here" />
+        <button type="submit">Generate Image</button>
+      </form>
+    </div>
+    <div id="imageResponse"></div>
+    <hr />
+
+    <div class="container">
+      <h1>Image to Text:</h1>
+      <form id="imageToTextForm">
+        <label for="imageTotextPrompt">Please upload your image: </label>
+        <input type="file" id="imageTotextPrompt" />
+        <button type="submit">Describe</button>
+      </form>
+    </div>
+    <div id="imageToTextResponse"></div>
+    <hr />
+
+    <div class="container">
+      <h1>Image to Image:</h1>
+      <form id="imageToImageForm">
+        <label for="imageToImagePrompt">Please upload your image: </label>
+        <input type="file" id="imageToImagePrompt" />
+        <label for="imageToImagePromptText"
+          >Tell us what you want to change:
+        </label>
+        <input type="text" id="imageToImagePromptText" />
+        <button type="submit">Generate Image</button>
+      </form>
+    </div>
+    <div id="imageToImageResponse"></div>
+    <hr />
+
+    <div class="container">
+      <h1>Text to Speech:</h1>
+      <form id="textToSpeechForm">
+        <label for="textToSpeechPrompt">Text here </label>
+        <input type="text" id="textToSpeechPrompt" />
+        <button type="submit">generate speech</button>
+      </form>
+    </div>
+    <div id="textToSpeechResponse"></div>
+    <hr />
+
+    <div class="container">
+      <h1>Speech to Text:</h1>
+      <form id="speechToTextForm">
+        <label for="speechToTextPrompt">Please upload your speech: </label>
+        <input type="file" id="speechToTextPrompt" />
+        <button type="submit">Transcribe</button>
+      </form>
+    </div>
+    <div id="speechToTextResponse"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
